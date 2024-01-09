@@ -11,4 +11,11 @@ RSpec.describe 'Stock Picker project' do
     # Days start at 0
     expect(response).to eq [1, 4]
   end
+
+  it 'should work with a different array' do
+    response = stock_picker([17, 15, 35, 23, 4, 123, 4, 6, 2, 51])
+
+    # Days start at 0
+    expect(response).to eq [4, 5]
+  end
 end
