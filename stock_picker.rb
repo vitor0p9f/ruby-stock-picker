@@ -1,19 +1,5 @@
 # frozen_string_literal: true
 
-def find_best_day_to_buy(array)
-  {
-    value: array.min,
-    index: array.index(array.min)
-  }
-end
-
-def find_best_day_to_sell(array)
-  {
-    value: array.max,
-    index: array.index(array.max)
-  }
-end
-
 def stock_picker(array)
   new_array = array.clone
   result = []
@@ -39,5 +25,13 @@ def stock_picker(array)
   end
 end
 
-print stock_picker([17, 3, 6, 9, 15, 8, 6, 1, 10])
-puts
+print 'Type daily values, separated by whitespace (Negative or 0 values will be removed from final array): '
+user_input = gets
+
+array_of_values = user_input.split(' ').map(&:to_i)
+array_of_values.delete(0)
+array_of_values.reject(&:negative?)
+
+result = stock_picker(array_of_values)
+
+puts "The best day to buy is the day #{result[0]} and the best day to sell is the day #{result[1]}"
