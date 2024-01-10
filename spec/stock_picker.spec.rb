@@ -18,4 +18,11 @@ RSpec.describe 'Stock Picker project' do
     # Days start at 0
     expect(response).to eq [4, 5]
   end
+
+  it 'should work when the best day to profit is the last day of array' do
+    response = stock_picker([3, 2, 1])
+
+    # Days start at 0
+    expect(response).to eq [2, 2]
+  end
 end
