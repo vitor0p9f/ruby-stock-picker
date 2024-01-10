@@ -16,18 +16,26 @@ end
 
 def stock_picker(array)
   new_array = array.clone
+  result = []
+  best_profit = 0
 
   loop do
-    day_to_sell = find_best_day_to_sell(new_array)
-    day_to_buy = find_best_day_to_buy(new_array)
+    smallest_value = new_array.min
+    index_of_smallest_value = new_array.index(smallest_value)
 
-    unless day_to_buy[:index] > day_to_sell[:index]
-      return [array.index(day_to_buy[:value]),
-              array.index(day_to_sell[:value])]
+    new_array.slice(index_of_smallest_value..).each do |value|
+      profit = value - smallest_value
+
+      next unless profit > best_profit
+
+      best_profit = profit
+      result[0] = index_of_smallest_value
+      result[1] = new_array.index(value)
     end
 
-    new_array.delete(day_to_sell[:value])
-    new_array.delete(day_to_buy[:value])
+    new_array.delete(smallest_value)
+
+    return result if new_array.empty?
   end
 end
 
