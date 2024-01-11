@@ -21,6 +21,11 @@ def stock_picker(array)
 
     new_array.delete(smallest_value)
 
+    if best_profit == 0
+      result = [array.index(array.min),
+                array.index(array.min)]
+    end
+
     return result if new_array.empty?
   end
 end
