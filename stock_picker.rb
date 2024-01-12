@@ -32,10 +32,14 @@ end
 
 print 'Type daily values, separated by whitespace (Negative or 0 values will be removed from final array): '
 user_input = gets
+puts
 
 array_of_values = user_input.split(' ').map(&:to_i)
 array_of_values.delete(0)
 array_of_values.reject(&:negative?)
+
+print "The array of values is #{array_of_values}"
+puts
 
 result = stock_picker(array_of_values)
 
