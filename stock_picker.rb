@@ -36,7 +36,7 @@ puts
 
 array_of_values = user_input.split(' ').map(&:to_i)
 array_of_values.delete(0)
-array_of_values.reject(&:negative?)
+array_of_values = array_of_values.reject(&:negative?)
 
 print "The array of values is #{array_of_values}"
 puts
