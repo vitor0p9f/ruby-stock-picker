@@ -12,7 +12,9 @@
   # Repositório de estudo - Ruby stock picker
 </div>
 
-Este projeto foi desenvolvido com o objetivo de aprender mais sobre a linguagem de programação Ruby e seus conceitos, por meio da aplicação dos mesmos na construção de um programa que recebe um array de valores diários da unidade de um determinado produto, sendo o índice de cada posição do array a representação de um dia, com os dias começando a partir do 0. O programa retorna ao usuário um array com duas posições, sendo a primeira delas o melhor dia para a compra e a segunda posição o melhor dia para a venda da unidade do produto, de modo que os dias sejam escolhidos de uma forma onde haja o maior lucro possível, lembrando que o produto deve ser adquirido para que a venda possa ser realizada.
+<p align="justify">
+  Este projeto foi desenvolvido com o objetivo de aprender mais sobre a linguagem de programação Ruby e seus conceitos, por meio da aplicação dos mesmos na construção de um programa que recebe um array de valores diários da unidade de um determinado produto, sendo o índice de cada posição do array a representação de um dia, com os dias começando a partir do 0. O programa retorna ao usuário um array com duas posições, sendo a primeira delas o melhor dia para a compra e a segunda posição o melhor dia para a venda da unidade do produto, de modo que os dias sejam escolhidos de uma forma onde haja o maior lucro possível, lembrando que o produto deve ser adquirido para que a venda possa ser realizada.
+</p>
 
 ## :gem: Gems utilizadas
 
