@@ -18,7 +18,7 @@
 
 ## :movie_camera: Project demonstration
 
-![alt text](https://github.com/vitor0p9f/ruby-stock-picker/blob/main/assets/ruby_stock_picker.gif)
+https://github.com/vitor0p9f/ruby-stock-picker/assets/153991573/8dcaa278-4c21-4a5c-afc5-603fdfe1fd77
 
 ## :gem: Used Gems
 
