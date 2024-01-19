@@ -16,6 +16,10 @@
   This project was developed with the goal of learning more about the Ruby programming language and its concepts, by applying them in the construction of a program that takes an array of daily values for a unit of a particular product. The index of each position in the array represents a day, with days starting from 0. The program returns to the user an array with two positions. The first position indicates the best day to buy, and the second position indicates the best day to sell the product unit. The selection of days is done in a way that maximizes profit, keeping in mind that the product must be purchased before it can be sold.
 </p>
 
+## :movie_camera: Project demonstration
+
+![alt text](https://github.com/vitor0p9f/ruby-stock-picker/blob/main/assets/ruby_stock_picker.gif)
+
 ## :gem: Used Gems
 
 * Rspec
